@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="App Advocacia", page_icon="⚖️", layout="wide")
 
+# Logo no topo
+tst_logo = "logo.png"  # imagem local na mesma pasta
+st.image(tst_logo, width=200)
 st.title("⚖️ App de Advocacia")
 
 # ------------------------------
@@ -120,6 +123,6 @@ elif aba == "👥 Gestão de Clientes":
 # ------------------------------
 else:
     st.header("📘 Sobre o eBook")
+    st.image("capa_ebook.png", caption="Capa do eBook", use_column_width=True)
     st.write("Este aplicativo acompanha o eBook de Direito, com dicas práticas para advogados e escritórios.")
     st.markdown("[📖 Clique aqui para acessar o eBook](https://exemplo.com/seu-ebook.pdf)")
-
